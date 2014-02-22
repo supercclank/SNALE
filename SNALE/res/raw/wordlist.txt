@@ -1,0 +1,10 @@
+An animal that goes MEOW;Cat
+An animal that goes MOOO;Cow
+An animal that goes ARF and Bark;Dog
+An animal that goes NEIGH;Horse
+An animal that goes OINK;Pig
+An animal that goes CLUCK;Chicken
+An animal that goes RAWR;Dinosaur
+An animal that goes BAAA;Sheep
+An animal that goes CHIRP;Bird
+An animal that goes HSSSS;Snake

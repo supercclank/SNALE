@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Simon" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+string/prompt" 
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"/>
+
+    <Button
+        android:id="@+id/blueButton"
+        android:layout_width="400px"
+        android:layout_height="200px"
+        android:layout_alignLeft="@+id/redButton"
+        android:layout_below="@+id/redButton"
+        android:background="@drawable/blueframe"
+        android:text="★" 
+        android:textSize="100sp"
+        android:onClick="blueClicked"/>
+
+    <Button
+        android:id="@+id/yellowButton"
+        android:layout_width="400px"
+        android:layout_height="200px"
+        android:layout_below="@+id/greenButton"
+        android:layout_toRightOf="@+id/blueButton"
+        android:background="@drawable/yellowframe"
+        android:text="☺"
+        android:textSize="100sp"
+		android:onClick="yellowClicked"/>
+
+    <Button
+        android:id="@+id/redButton"
+        android:layout_width="400px"
+        android:layout_height="200px"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="156dp"
+        android:layout_marginTop="135dp"
+        android:background="@drawable/redframe"
+        android:onClick="redClicked"
+        android:text="♪"
+        android:textSize="100sp"
+        android:layout_marginLeft="225dp"/>
+<!-- NEED TO CHANGE IT SO ALL THE MARGIN IS SET USING RELATIVE LAYOUT CLASS (SEE NOTE IN SIMON.java)
+ -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="23dp"
+        android:text=""
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/greenButton"
+        android:layout_width="400px"
+        android:layout_height="200px"
+        android:layout_above="@+id/blueButton"
+        android:layout_alignLeft="@+id/yellowButton"
+        android:background="@drawable/greenframe"
+        android:onClick="greenClicked"
+        android:text="✤"
+        android:textSize="100sp" />
+
+</RelativeLayout>

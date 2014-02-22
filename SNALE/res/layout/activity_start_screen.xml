@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".StartScreen" >
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="executeSign"
+        android:src="@drawable/launcher1" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="39dp"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:src="@drawable/fraction"
+		android:onClick="executeCup"/>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="43dp"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:onClick="executeShop"
+        android:src="@drawable/emptycart" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/imageButton1"
+        android:onClick="executeSimon"
+        android:src="@drawable/simonsays" />
+
+</RelativeLayout>
