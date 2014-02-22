@@ -3,7 +3,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-//TODO fix food game (then add it in), make this not look awful
+//TODO fix screen dimensions to be dynamic based on device
 public class StartScreen extends Activity {
 	
 	

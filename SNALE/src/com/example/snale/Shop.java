@@ -1,5 +1,6 @@
 package com.example.snale;
 //BROKEN COMPLETELY FIX LATER
+//compeltely rewrite using api so it actually works
 import java.io.File;
 import java.lang.reflect.Field;
 import java.util.*;

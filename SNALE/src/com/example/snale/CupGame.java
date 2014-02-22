@@ -18,7 +18,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
+//toDo fix it so the answer is always displayed
 public class CupGame extends Activity {
 	private ArrayList<String> images=new ArrayList<String>();
 	private String answer="";
@@ -68,7 +68,7 @@ public class CupGame extends Activity {
 		Random gen=new Random();
 		choices.clear();
 		int x=1;
-		while (temp.size()>0){
+		while (temp.size()-1>0){
 		String s="imageButton"+x;
 		x++;
 		String s2=temp.remove(gen.nextInt(temp.size()));
@@ -141,10 +141,6 @@ public class CupGame extends Activity {
 		this.check();
 	}
 	
-	public void b5(View v) throws IllegalArgumentException, IllegalAccessException, NoSuchFieldException{
-		selected=choices.get(4);
-		this.check();
-	}
 	
 	private void setDimensions(){
 		WindowManager mWinMgr = (WindowManager)getBaseContext().getSystemService(Context.WINDOW_SERVICE);
@@ -157,8 +153,6 @@ public class CupGame extends Activity {
 		Button button2=(Button) findViewById(R.id.imageButton2);
 		Button button3=(Button) findViewById(R.id.imageButton3);
 		Button button4=(Button) findViewById(R.id.imageButton4);
-		Button button5=(Button) findViewById(R.id.imageButton5);
-		
 		params=button1.getLayoutParams();
 		params.width=(int) (displayWidth/5);
 		params.height=(int)(displayHeight/5);
@@ -183,10 +177,6 @@ public class CupGame extends Activity {
 		
 		score.setTextSize(displayHeight/18);
 
-		params=button5.getLayoutParams();
-		params.width=(int) (displayWidth/5);
-		params.height=(int)(displayHeight/5);
-		button1.setLayoutParams(params);
 		
 		
 		System.out.println("width is "+displayWidth);//1280

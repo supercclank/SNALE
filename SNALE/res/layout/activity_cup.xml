@@ -9,25 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".CupGame" >
 
-    <Button
-        android:id="@+id/imageButton4"
-        android:layout_width="200px"
-        android:layout_height="200px"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/imageButton1"
-        android:layout_marginRight="37dp"
-        android:onClick="b4"
-        android:src="@drawable/ic_launcher" />
-
-    <Button
-        android:id="@+id/imageButton2"
-        android:layout_width="200px"
-        android:layout_height="200px"
-        android:layout_alignLeft="@+id/imageButton4"
-        android:layout_alignTop="@+id/imageButton3"
-        android:onClick="b2"
-        android:src="@drawable/ic_launcher" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -39,44 +20,55 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/imageButton3"
-        android:layout_width="200px"
-        android:layout_height="200px"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="39dp"
-        android:onClick="b3"
-        android:src="@drawable/ic_launcher" />
-
-    <Button
-        android:id="@+id/imageButton1"
-        android:layout_width="200px"
-        android:layout_height="200px"
-        android:layout_alignLeft="@+id/imageButton3"
-        android:layout_below="@+id/textView3"
-        android:onClick="b1"
-        android:src="@drawable/ic_launcher" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageButton2"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="26dp"
         android:gravity="center"
         android:text="O of O Correct"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="50sp" />
 
     <Button
-        android:id="@+id/imageButton5"
+        android:id="@+id/imageButton1"
         android:layout_width="200px"
         android:layout_height="200px"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:onClick="b5"
+        android:layout_alignBaseline="@+id/imageButton4"
+        android:layout_alignBottom="@+id/imageButton4"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:onClick="b1"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/imageButton3"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignBaseline="@+id/imageButton2"
+        android:layout_alignBottom="@+id/imageButton2"
+        android:layout_alignRight="@+id/textView2"
+        android:onClick="b3"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/imageButton4"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_above="@+id/imageButton3"
+        android:layout_toLeftOf="@+id/imageButton1"
+        android:onClick="b4"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/imageButton2"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_above="@+id/textView2"
+        android:layout_marginBottom="41dp"
+        android:layout_toLeftOf="@+id/imageButton3"
+        android:onClick="b2"
         android:src="@drawable/ic_launcher" />
 
 </RelativeLayout>

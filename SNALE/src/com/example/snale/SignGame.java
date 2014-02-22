@@ -19,7 +19,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
-
+//finish, must bug test
 public class SignGame extends Activity {
 
 	private static ArrayList<Field> Signs=new ArrayList<Field>();

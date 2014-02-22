@@ -1,6 +1,5 @@
 package com.example.snale;
-//FINISH LOOKING AT SOMETHING TASK
-//comment code ASAP for this one so it is finished other than some layout params and images :D
+//look into threads/bug/beta test (bit odd with switch to challenge)
 import java.util.ArrayList;
 import java.util.Random;
 
