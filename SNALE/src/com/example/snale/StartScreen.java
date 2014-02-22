@@ -30,11 +30,6 @@ public class StartScreen extends Activity {
 	public void executeShop(View V){
 		Intent ShopIntent=new Intent(this, Shop.class);
 		startActivity(ShopIntent);
-	}	
-		
-	public void executeAnimalGame(View V){
-		Intent AnimalIntent=new Intent(this, Word.class);
-		startActivity(AnimalIntent);
 	}
 	
 }
