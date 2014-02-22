@@ -41,6 +41,7 @@ public class CupGame extends Activity {
 		images.add("two_cup");
 		try {
 			this.shuffle();
+			//
 			this.question();
 		} catch (IllegalArgumentException e) {
 			// TODO Auto-generated catch block
